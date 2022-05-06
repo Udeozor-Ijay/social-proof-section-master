@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('https://fonts.google.com/specimen/Spartan');
+}
+
+html {
+   height: 100%;
+   background-image: url('images/bg-pattern-bottom-desktop.svg');
+   background-repeat: no-repeat;
+    
+}
+
+.attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      
+.attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+
+body {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/bg-pattern-top-desktop.svg');
+    background-repeat: no-repeat;
+    color:hsl(300, 43%, 22%);
+    font-size: 15px;
+    font-family: 'Spartan','Courier New', Courier, monospace;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav > div {
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    border-radius: 16px;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.verif {
+    color: hsl(333, 80%, 67%);
+}
+
+.star{
+    background-color:  hsl(300, 24%, 96%);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.img{
+    margin-right: 1rem;
+}
+
+#box1{
+    margin-top: 4rem;
+     padding-bottom: 1rem;
+}
+
+#box2{
+    margin-top: 5.5rem;
+    padding-bottom: 1rem;
+}
+
+#box3{
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+}
+
+#main{
+    width: 50%
+
+}
+
+#main2{
+    margin-left: 3rem ;
+
+}
+
+#star1 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#star2{
+    margin-left: 3.5rem ;
+    display: flex;
+    flex-direction: row;
+}
+
+#star3 {
+    margin-left: 7rem ;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 844px) {
+    
+    body{
+        margin: 4rem;
+    }
+
+    nav{
+         flex-wrap: wrap;
+         width:fit-content;
+         margin-top: 0.3rem;
+         justify-content: center;
+         align-self: center;
+    }
+
+    main {
+         flex-wrap: wrap;
+         align-self: center;
+    }
+
+    #main{
+        width: 100%;
+    }
+
+    #main2{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #box1, #box2, #box3 {
+        padding: 2rem;
+        margin: 1rem;
+        width:25rem;
+    }
+
+    .star{
+        margin-top: 1rem;
+    }
+
+    #star1,#star2,#star3 {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .img{
+        margin-bottom: 0.8rem;
+    }
+}
